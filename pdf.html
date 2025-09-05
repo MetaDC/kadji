@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <!-- Google tag (gtag.js) event -->
+<script>
+  gtag('event', 'conversion_event_submit_lead_form', {
+    // <event_parameters>
+  });
+</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open PDF and Redirect to WhatsApp</title>
+    <script>
+    
+      function pdfOpen() {
+      
+        // window.open("assets/images/pricing.pdf"); 
+        window.location.href="assets/images/pricing.pdf"; 
+
+        // Delay the WhatsApp redirection by 2 seconds
+        // setTimeout(function () {
+        //   window.location.href = "https://wa.me/11234567890"; // Replace with the actual WhatsApp link
+        // }, 2000); // Delay of 2 seconds before redirecting to WhatsApp
+      }
+    </script>
+  </head>
+
+  <body onload="pdfOpen()">
+    <div
+      class="container"
+      style="height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;"
+    >
+      <h1 style="text-align: center;">Redirecting to pdf...</h1>
+      <p style="text-align: center;">Please wait while we open the PDF and redirect you</p>
+    </div>
+  </body>
+</html>
