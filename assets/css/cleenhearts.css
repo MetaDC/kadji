@@ -10306,7 +10306,7 @@ li:hover .sidebar__comments__icon::after {
 .product-item {
   position: relative;
   background-color: var(--cleenhearts-white, #fff);
-  border: 1px solid var(--cleenhearts-border-color, #d7d3cb);
+  border: 1px solid var(--cleenhearts-border-color, #0ca1ba);
   border-radius: 20px;
   transition: all 500ms ease;
 }
@@ -10337,7 +10337,7 @@ li:hover .sidebar__comments__icon::after {
 .product-item__content {
   position: relative;
   text-align: center;
-  padding: 30px 20px 29px;
+  /* padding: 30px 20px 29px; */
 }
 
 .product-item__title {
