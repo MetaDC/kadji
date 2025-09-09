@@ -250,6 +250,29 @@
       .ms-2 {
         margin-right: 0.5rem !important;
       }
+
+      /* Mobile/Desktop visibility control using media queries */
+      .amenities--desktop {
+        display: none;
+      }
+
+      .amenities--mobile {
+        display: block;
+      }
+
+      @media (min-width: 992px) {
+        .amenities--desktop {
+          display: block !important;
+        }
+
+        .amenities--mobile {
+          display: none !important;
+        }
+      }
+
+      .swiper-pagination {
+        margin-top: 15px;
+      }
     </style>
   </head>
 
@@ -2292,99 +2315,20 @@
       <!--  Eminity end -->
 
       <!-- <eminity new> -->
-      <section class="product-page section-space-bottom">
-        <div class="text-center">
-          <h3 class="sec-title__title" style="margin-bottom: 20px">
-            Amenities
-          </h3>
+      <section class="product-page section-space-bottom py-5">
+        <div class="text-center mb-4">
+          <h3 class="sec-title__title">Amenities</h3>
         </div>
+
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-12">
-              <!-- ✅ Swiper Slider for Mobile Only -->
-              <div class="swiper amenities-swiper d-lg-none">
-                <div class="swiper-wrapper">
-                  <!-- 👉 Amenity Items (Swiper Slides) -->
-                  <div class="swiper-slide">
-                    <div class="product-item">
-                      <a class="product-item__img">
-                        <div
-                          style="
-                            position: relative;
-                            width: 100%;
-                            padding-top: 56.25%;
-                            overflow: hidden;
-                            border-radius: 6px;
-                          "
-                        >
-                          <img
-                            src="assets/images/eminities/sample-aminities.png"
-                            alt="Big sofa"
-                            style="
-                              position: absolute;
-                              top: 0;
-                              left: 0;
-                              width: 100%;
-                              height: 100%;
-                              object-fit: cover;
-                            "
-                          />
-                        </div>
-                      </a>
-                      <div class="product-item__content">
-                        <h5 class="product-item__title">Big sofa</h5>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- 👉 Duplicate for more Swiper Slides -->
-                  <div class="swiper-slide">
-                    <div class="product-item">
-                      <a class="product-item__img">
-                        <div
-                          style="
-                            position: relative;
-                            width: 100%;
-                            padding-top: 56.25%;
-                            overflow: hidden;
-                            border-radius: 6px;
-                          "
-                        >
-                          <img
-                            src="assets/images/eminities/sample-aminities.png"
-                            alt="Big sofa"
-                            style="
-                              position: absolute;
-                              top: 0;
-                              left: 0;
-                              width: 100%;
-                              height: 100%;
-                              object-fit: cover;
-                            "
-                          />
-                        </div>
-                      </a>
-                      <div class="product-item__content">
-                        <h5 class="product-item__title">Big sofa</h5>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- ➕ Add more swiper-slide blocks as needed -->
-                </div>
-                <!-- Optional pagination -->
-                <div class="swiper-pagination"></div>
-              </div>
-
-              <!-- ✅ Grid Layout for Desktop Only -->
-              <div class="row gutter-y-30 d-none d-lg-flex">
-                <!-- 👉 Amenity Items (Grid) -->
-                <div
-                  class="col-xl-3 col-lg-4 col-sm-6"
-                  style="padding-bottom: 20px"
-                >
+              <!-- ✅ Desktop Grid -->
+              <div class="row gutter-y-30 amenities--desktop">
+                <!-- Repeat this col block for more items -->
+                <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
                   <div class="product-item">
-                    <a class="product-item__img">
+                    <a class="product-item__img d-block">
                       <div
                         style="
                           position: relative;
@@ -2408,13 +2352,86 @@
                         />
                       </div>
                     </a>
-                    <div class="product-item__content">
+                    <div class="product-item__content text-center mt-2">
                       <h5 class="product-item__title">Big sofa</h5>
                     </div>
                   </div>
                 </div>
+                <!-- ➕ Add more amenity blocks here -->
+              </div>
 
-                <!-- ➕ Duplicate for more grid items -->
+              <!-- ✅ Mobile Swiper -->
+              <div class="swiper amenities-swiper amenities--mobile">
+                <div class="swiper-wrapper">
+                  <!-- Swiper Slide -->
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <a class="product-item__img d-block">
+                        <div
+                          style="
+                            position: relative;
+                            width: 100%;
+                            padding-top: 56.25%;
+                            overflow: hidden;
+                            border-radius: 6px;
+                          "
+                        >
+                          <img
+                            src="assets/images/eminities/sample-aminities.png"
+                            alt="Big sofa"
+                            style="
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </a>
+                      <div class="product-item__content text-center mt-2">
+                        <h5 class="product-item__title">Big sofa</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ➕ Duplicate swiper-slide as needed -->
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <a class="product-item__img d-block">
+                        <div
+                          style="
+                            position: relative;
+                            width: 100%;
+                            padding-top: 56.25%;
+                            overflow: hidden;
+                            border-radius: 6px;
+                          "
+                        >
+                          <img
+                            src="assets/images/eminities/sample-aminities.png"
+                            alt="Big sofa"
+                            style="
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </a>
+                      <div class="product-item__content text-center mt-2">
+                        <h5 class="product-item__title">Big sofa</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Swiper pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
               </div>
             </div>
           </div>
@@ -3666,7 +3683,7 @@
       var x = document.getElementsByTagName("script")[0];
       x.parentNode.insertBefore(s, x);
     </script>
-    <script>
+    <!-- <script>
       document.addEventListener("DOMContentLoaded", function () {
         if (window.innerWidth < 992) {
           new Swiper(".amenities-swiper", {
@@ -3686,6 +3703,31 @@
             },
           });
         }
+      });
+    </script> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".amenities-swiper", {
+          slidesPerView: 1,
+          spaceBetween: 16,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          breakpoints: {
+            576: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 2.5,
+            },
+          },
+        });
       });
     </script>
   </body>
