@@ -262,7 +262,10 @@
 
       @media (min-width: 992px) {
         .amenities--desktop {
-          display: block !important;
+          display: grid !important;
+          grid-template-columns: repeat(4, 1fr);
+          width: 100% !important;
+          /* grid-template-columns: repeat(4, 1fr); */
         }
 
         .amenities--mobile {
@@ -2317,6 +2320,9 @@
       <!-- <eminity new> -->
       <section class="product-page section-space-bottom py-5">
         <div class="text-center mb-4">
+          <h6 class="sec-title__tagline sec-title__tagline--center">
+            Inside Kadji
+          </h6>
           <h3 class="sec-title__title">Amenities</h3>
         </div>
 
@@ -2324,7 +2330,7 @@
           <div class="row justify-content-center">
             <div class="col-lg-12">
               <!-- ✅ Desktop Grid -->
-              <div class="row gutter-y-30 amenities--desktop">
+              <div class="amenities--desktop">
                 <!-- Repeat this col block for more items -->
                 <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
                   <div class="product-item">
@@ -2339,7 +2345,7 @@
                         "
                       >
                         <img
-                          src="assets/images/eminities/sample-aminities.png"
+                          src="assets/images/eminities/doctor-led.webp"
                           alt="Big sofa"
                           style="
                             position: absolute;
@@ -2353,7 +2359,377 @@
                       </div>
                     </a>
                     <div class="product-item__content text-center mt-2">
-                      <h5 class="product-item__title">Big sofa</h5>
+                      <h5 class="product-item__title">
+                        Doctor-Led<br />
+                        Medical Supervision
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                  <div class="product-item">
+                    <a class="product-item__img d-block">
+                      <div
+                        style="
+                          position: relative;
+                          width: 100%;
+                          padding-top: 56.25%;
+                          overflow: hidden;
+                          border-radius: 6px;
+                        "
+                      >
+                        <img
+                          src="assets/images/eminities/nursing-care.webp"
+                          alt="Big sofa"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                          "
+                        />
+                      </div>
+                    </a>
+                    <div class="product-item__content text-center mt-2">
+                      <h5 class="product-item__title">
+                        Personal & <br />Nursing Care
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                  <div class="product-item">
+                    <a class="product-item__img d-block">
+                      <div
+                        style="
+                          position: relative;
+                          width: 100%;
+                          padding-top: 56.25%;
+                          overflow: hidden;
+                          border-radius: 6px;
+                        "
+                      >
+                        <img
+                          src="assets/images/eminities/security.webp"
+                          alt="Big sofa"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                          "
+                        />
+                      </div>
+                    </a>
+                    <div class="product-item__content text-center mt-2">
+                      <h5 class="product-item__title">
+                        On-Site<br />Security Services
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                  <div class="product-item">
+                    <a class="product-item__img d-block">
+                      <div
+                        style="
+                          position: relative;
+                          width: 100%;
+                          padding-top: 56.25%;
+                          overflow: hidden;
+                          border-radius: 6px;
+                        "
+                      >
+                        <img
+                          src="assets/images/eminities/care-management.webp"
+                          alt="Big sofa"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                          "
+                        />
+                      </div>
+                    </a>
+                    <div class="product-item__content text-center mt-2">
+                      <h5 class="product-item__title">
+                        Incontinence <br />Care Management
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                  <div class="product-item">
+                    <a class="product-item__img d-block">
+                      <div
+                        style="
+                          position: relative;
+                          width: 100%;
+                          padding-top: 56.25%;
+                          overflow: hidden;
+                          border-radius: 6px;
+                        "
+                      >
+                        <img
+                          src="assets/images/eminities/neuro-ortho.webp"
+                          alt="Big sofa"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                          "
+                        />
+                      </div>
+                    </a>
+                    <div class="product-item__content text-center mt-2">
+                      <h5 class="product-item__title">
+                        Rehab for Neuro &<br />
+                        Ortho Cases
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                  <div class="product-item">
+                    <a class="product-item__img d-block">
+                      <div
+                        style="
+                          position: relative;
+                          width: 100%;
+                          padding-top: 56.25%;
+                          overflow: hidden;
+                          border-radius: 6px;
+                        "
+                      >
+                        <img
+                          src="assets/images/eminities/twin-share.webp"
+                          alt="Big sofa"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                          "
+                        />
+                      </div>
+                    </a>
+                    <div class="product-item__content text-center mt-2">
+                      <h5 class="product-item__title">
+                        Twin-Share &<br />
+                        Private Rooms
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                  <div class="product-item">
+                    <a class="product-item__img d-block">
+                      <div
+                        style="
+                          position: relative;
+                          width: 100%;
+                          padding-top: 56.25%;
+                          overflow: hidden;
+                          border-radius: 6px;
+                        "
+                      >
+                        <img
+                          src="assets/images/eminities/emotional-support.webp"
+                          alt="Big sofa"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                          "
+                        />
+                      </div>
+                    </a>
+                    <div class="product-item__content text-center mt-2">
+                      <h5 class="product-item__title">
+                        Counseling & <br />Emotional Support
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                  <div class="product-item">
+                    <a class="product-item__img d-block">
+                      <div
+                        style="
+                          position: relative;
+                          width: 100%;
+                          padding-top: 56.25%;
+                          overflow: hidden;
+                          border-radius: 6px;
+                        "
+                      >
+                        <img
+                          src="assets/images/eminities/advanced-physiotherapy.webp"
+                          alt="Big sofa"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                          "
+                        />
+                      </div>
+                    </a>
+                    <div class="product-item__content text-center mt-2">
+                      <h5 class="product-item__title">
+                        Standard &<br />
+                        Advanced Physiotherapy
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                  <div class="product-item">
+                    <a class="product-item__img d-block">
+                      <div
+                        style="
+                          position: relative;
+                          width: 100%;
+                          padding-top: 56.25%;
+                          overflow: hidden;
+                          border-radius: 6px;
+                        "
+                      >
+                        <img
+                          src="assets/images/eminities/meals-prepared.webp"
+                          alt="Big sofa"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                          "
+                        />
+                      </div>
+                    </a>
+                    <div class="product-item__content text-center mt-2">
+                      <h5 class="product-item__title">
+                        Meals Prepared & <br />Served
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                  <div class="product-item">
+                    <a class="product-item__img d-block">
+                      <div
+                        style="
+                          position: relative;
+                          width: 100%;
+                          padding-top: 56.25%;
+                          overflow: hidden;
+                          border-radius: 6px;
+                        "
+                      >
+                        <img
+                          src="assets/images/eminities/ambulance.webp"
+                          alt="Big sofa"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                          "
+                        />
+                      </div>
+                    </a>
+                    <div class="product-item__content text-center mt-2">
+                      <h5 class="product-item__title">
+                        Ambulance <br />Service Access
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                  <div class="product-item">
+                    <a class="product-item__img d-block">
+                      <div
+                        style="
+                          position: relative;
+                          width: 100%;
+                          padding-top: 56.25%;
+                          overflow: hidden;
+                          border-radius: 6px;
+                        "
+                      >
+                        <img
+                          src="assets/images/eminities/lab.webp"
+                          alt="Big sofa"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                          "
+                        />
+                      </div>
+                    </a>
+                    <div class="product-item__content text-center mt-2">
+                      <h5 class="product-item__title">
+                        Lab & <br />Diagnostic Assistance
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                  <div class="product-item">
+                    <a class="product-item__img d-block">
+                      <div
+                        style="
+                          position: relative;
+                          width: 100%;
+                          padding-top: 56.25%;
+                          overflow: hidden;
+                          border-radius: 6px;
+                        "
+                      >
+                        <img
+                          src="assets/images/eminities/laundry.webp"
+                          alt="Big sofa"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                          "
+                        />
+                      </div>
+                    </a>
+                    <div class="product-item__content text-center mt-2">
+                      <h5 class="product-item__title">
+                        Regular<br />
+                        Laundry Services
+                      </h5>
                     </div>
                   </div>
                 </div>
@@ -2377,7 +2753,7 @@
                           "
                         >
                           <img
-                            src="assets/images/eminities/sample-aminities.png"
+                            src="assets/images/eminities/sample-aminities.webp"
                             alt="Big sofa"
                             style="
                               position: absolute;
@@ -2391,13 +2767,281 @@
                         </div>
                       </a>
                       <div class="product-item__content text-center mt-2">
-                        <h5 class="product-item__title">Big sofa</h5>
+                        <h5 class="product-item__title">
+                          Doctor-Led <br />Medical Supervision
+                        </h5>
                       </div>
                     </div>
                   </div>
 
                   <!-- ➕ Duplicate swiper-slide as needed -->
                   <div class="swiper-slide">
+                    <div class="product-item">
+                      <a class="product-item__img d-block">
+                        <div
+                          style="
+                            position: relative;
+                            width: 100%;
+                            padding-top: 56.25%;
+                            overflow: hidden;
+                            border-radius: 6px;
+                          "
+                        >
+                          <img
+                            src="assets/images/eminities/nursing-care.webp"
+                            alt="Big sofa"
+                            style="
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </a>
+                      <div class="product-item__content text-center mt-2">
+                        <h5 class="product-item__title">
+                          Personal &<br />
+                          Nursing Care
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <a class="product-item__img d-block">
+                        <div
+                          style="
+                            position: relative;
+                            width: 100%;
+                            padding-top: 56.25%;
+                            overflow: hidden;
+                            border-radius: 6px;
+                          "
+                        >
+                          <img
+                            src="assets/images/eminities/security.webp"
+                            alt="Big sofa"
+                            style="
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </a>
+                      <div class="product-item__content text-center mt-2">
+                        <h5 class="product-item__title">
+                          On-Site <br />Security Services
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <a class="product-item__img d-block">
+                        <div
+                          style="
+                            position: relative;
+                            width: 100%;
+                            padding-top: 56.25%;
+                            overflow: hidden;
+                            border-radius: 6px;
+                          "
+                        >
+                          <img
+                            src="assets/images/eminities/care-management.webp"
+                            alt="Big sofa"
+                            style="
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </a>
+                      <div class="product-item__content text-center mt-2">
+                        <h5 class="product-item__title">
+                          Incontinence <br />Care Management
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <a class="product-item__img d-block">
+                        <div
+                          style="
+                            position: relative;
+                            width: 100%;
+                            padding-top: 56.25%;
+                            overflow: hidden;
+                            border-radius: 6px;
+                          "
+                        >
+                          <img
+                            src="assets/images/eminities/neuro-ortho.webp"
+                            alt="Big sofa"
+                            style="
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </a>
+                      <div class="product-item__content text-center mt-2">
+                        <h5 class="product-item__title">
+                          Rehab for Neuro & <br />Ortho Cases
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <a class="product-item__img d-block">
+                        <div
+                          style="
+                            position: relative;
+                            width: 100%;
+                            padding-top: 56.25%;
+                            overflow: hidden;
+                            border-radius: 6px;
+                          "
+                        >
+                          <img
+                            src="assets/images/eminities/twin-share.webp"
+                            alt="Big sofa"
+                            style="
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </a>
+                      <div class="product-item__content text-center mt-2">
+                        <h5 class="product-item__title">
+                          Twin-Share & <br />Private Rooms
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <a class="product-item__img d-block">
+                        <div
+                          style="
+                            position: relative;
+                            width: 100%;
+                            padding-top: 56.25%;
+                            overflow: hidden;
+                            border-radius: 6px;
+                          "
+                        >
+                          <img
+                            src="assets/images/eminities/emotional-support.webp"
+                            alt="Big sofa"
+                            style="
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </a>
+                      <div class="product-item__content text-center mt-2">
+                        <h5 class="product-item__title">
+                          Counseling & <br />Emotional Support
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <a class="product-item__img d-block">
+                        <div
+                          style="
+                            position: relative;
+                            width: 100%;
+                            padding-top: 56.25%;
+                            overflow: hidden;
+                            border-radius: 6px;
+                          "
+                        >
+                          <img
+                            src="assets/images/eminities/advanced-physiotherapy.webp"
+                            alt="Big sofa"
+                            style="
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </a>
+                      <div class="product-item__content text-center mt-2">
+                        <h5 class="product-item__title">
+                          Standard & <br />Advanced Physiotherapy
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <a class="product-item__img d-block">
+                        <div
+                          style="
+                            position: relative;
+                            width: 100%;
+                            padding-top: 56.25%;
+                            overflow: hidden;
+                            border-radius: 6px;
+                          "
+                        >
+                          <img
+                            src="assets/images/eminities/meals-prepared.webp"
+                            alt="Big sofa"
+                            style="
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </a>
+                      <div class="product-item__content text-center mt-2">
+                        <h5 class="product-item__title">
+                          Meals Prepared &<br />
+                          Served
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="swiper-slide">
                     <div class="product-item">
                       <a class="product-item__img d-block">
                         <div
@@ -2425,6 +3069,105 @@
                       </a>
                       <div class="product-item__content text-center mt-2">
                         <h5 class="product-item__title">Big sofa</h5>
+                      </div>
+                    </div>
+                  </div> -->
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <a class="product-item__img d-block">
+                        <div
+                          style="
+                            position: relative;
+                            width: 100%;
+                            padding-top: 56.25%;
+                            overflow: hidden;
+                            border-radius: 6px;
+                          "
+                        >
+                          <img
+                            src="assets/images/eminities/ambulance.webp"
+                            alt="Big sofa"
+                            style="
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </a>
+                      <div class="product-item__content text-center mt-2">
+                        <h5 class="product-item__title">
+                          Ambulance <br />Service Access
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <a class="product-item__img d-block">
+                        <div
+                          style="
+                            position: relative;
+                            width: 100%;
+                            padding-top: 56.25%;
+                            overflow: hidden;
+                            border-radius: 6px;
+                          "
+                        >
+                          <img
+                            src="assets/images/eminities/lab.webp"
+                            alt="Big sofa"
+                            style="
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </a>
+                      <div class="product-item__content text-center mt-2">
+                        <h5 class="product-item__title">
+                          Lab & <br />Diagnostic Assistance
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <a class="product-item__img d-block">
+                        <div
+                          style="
+                            position: relative;
+                            width: 100%;
+                            padding-top: 56.25%;
+                            overflow: hidden;
+                            border-radius: 6px;
+                          "
+                        >
+                          <img
+                            src="assets/images/eminities/laundry.webp"
+                            alt="Big sofa"
+                            style="
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </a>
+                      <div class="product-item__content text-center mt-2">
+                        <h5 class="product-item__title">
+                          Regular <br />Laundry Services
+                        </h5>
                       </div>
                     </div>
                   </div>
