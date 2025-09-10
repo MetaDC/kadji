@@ -15,7 +15,7 @@ document
     let email = document.getElementById("email").value;
 
     const data = {
-      emails: ["aadil18122001@gmail.com"],
+      emails: ["info@kadji.co.in"],
       // emails: ["matinshaikh79070@gmail.com"],
       subject: "New Pricing Submission",
       message: `<strong>Name</strong> : ${name}<br/> <strong>Phone</strong> : ${phone}<br/> <strong>email</strong> : ${email}<br/>`,
@@ -244,7 +244,7 @@ window.submit_form_inquiry = async function (e, formEl) {
     }
 
     const data = {
-      emails: ["aadil18122001@gmail.com"],
+      emails: ["info@kadji.co.in"],
       subject: subject,
       message: `<strong>Name</strong> : ${name}<br/> <strong>Phone</strong> : ${phone}<br/> <strong>email</strong> : ${email}<br/>${
         need ? ` <strong>Need</strong> : ${need}<br/>` : ""
