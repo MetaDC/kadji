@@ -133,299 +133,553 @@
             </div><!-- /.container -->
         </div><!-- /.topbar-two topbar-one -->
 
-        <header class="main-header-two main-header sticky-header sticky-header--two sticky-header--normal">
-            <div class="main-header-two__bg" style="background-image: url('assets/images/backgrounds/header-bg.png');">
+        <header
+        class="main-header-two main-header sticky-header sticky-header--two sticky-header--normal"
+      >
+        <div
+          class="main-header-two__bg"
+          style="
+            background-image: url('assets/images/backgrounds/header-bg.png');
+          "
+        ></div>
+        <!-- /.main-header-two__bg -->
+        <div class="container-fluid">
+          <div class="main-header__inner">
+            <div class="main-header-two__left">
+              <div class="main-header-two__logo">
+                <a href="index.html">
+                  <img
+                    src="assets/images/kadji-new-logo.png"
+                    alt="Kadji Care"
+                    width="120"
+                  />
+                  <!-- <h1>Kadji Care</h1> -->
+                </a>
+              </div>
+              <!-- /.main-header-two__logo -->
+              <!-- /.main-header-two__sidebar-btn -->
+              <!-- <button type="button" class="main-header-two__sidebar-btn sidebar-btn__toggler">
+                            <span class="main-header-two__sidebar-btn__line"></span>
+                            <span class="main-header-two__sidebar-btn__line"></span>
+                            <span class="main-header-two__sidebar-btn__line"></span>
+                        </button> -->
             </div>
-            <!-- /.main-header-two__bg -->
-            <div class="container-fluid">
-                <div class="main-header__inner">
-                    <div class="main-header-two__left">
-                        <div class="main-header-two__logo">
-                            <a href="index.html">
-                                <img src="assets/images/kadji-new-logo.png" alt="Kadji Care" width="120">
-                                <!-- <h1>Kadji Care</h1> -->
+            <!-- /.main-header-two__left -->
+            <nav class="main-header__nav main-menu main-menu--two">
+              <ul class="main-menu__list">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item dropdown position-static">
+                  <a
+                    data-mdb-dropdown-init
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Medical Rehabilitation
+                  </a>
+                  <!-- Dropdown menu -->
+                  <div
+                    class="dropdown-menu w-100 mt-0"
+                    aria-labelledby="navbarDropdown"
+                    style="
+                      border-top-left-radius: 0;
+                      border-top-right-radius: 0;
+                    "
+                  >
+                    <div class="container">
+                      <div class="row my-4 justify-content-center">
+                        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0 drop-respo">
+                          <div class="dropdown-content">
+                            <a href="strokecare-rehab.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/stroke.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Stroke Care & Rehab
                             </a>
-                        </div><!-- /.main-header-two__logo -->
-                        <button type="button" class="main-header-two__sidebar-btn sidebar-btn__toggler">
-                            <span class="main-header-two__sidebar-btn__line"></span>
-                            <span class="main-header-two__sidebar-btn__line"></span>
-                            <span class="main-header-two__sidebar-btn__line"></span>
-                        </button><!-- /.main-header-two__sidebar-btn -->
-                    </div><!-- /.main-header-two__left -->
-                    <nav class="main-header__nav  main-menu main-menu--two">
-                        <ul class="main-menu__list">
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
+                            <a href="parkinson-care.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/parkinson-1.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Parkinson Care & Rehab
+                            </a>
+                            <a href="coma-care.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/coma-1.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Coma Care &Rehab
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          class="col-md-6 col-lg-4 mb-4 mb-md-0 drop-respo"
+                          style="display: grid; justify-content: center"
+                        >
+                          <div class="dropdown-content">
+                            <a href="General-Surgery.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/post.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Post Operative (General Surgery) Care & Rehab
+                            </a>
+                            <a href="orthopedic-surgery.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/ortho.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Post Operative (Orthopedic Surgery) Care & Rehab
+                            </a>
+                            <a href="cancer-care.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/cancer-1.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Cancer Care & Rehab
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          class="col-md-6 col-lg-4 mb-4 mb-md-0 drop-respo"
+                          style="display: grid; justify-content: center"
+                        >
+                          <div class="dropdown-content">
+                            <a href="cardiac-care.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/cardio.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Cardiac Care & Rehab
+                            </a>
+                            <a href="mental-health.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/mental-1.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Mental Health Care & Rehab
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
 
-                            <li class="nav-item dropdown position-static">
-                                <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                    role="button" aria-expanded="false">
-                                    Medical Rehabilitation
-                                </a>
-                                <!-- Dropdown menu -->
-                                <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="
-                                                border-top-left-radius: 0;
-                                                border-top-right-radius: 0;
-                                              ">
-                                    <div class="container">
-                                        <div class="row my-4 justify-content-center">
-                                            <div class="col-md-6 col-lg-4 mb-4 mb-md-0 drop-respo"
-                                                style="display: grid; justify-content: center;">
-                                                <div class="dropdown-content">
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/stroke.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Stroke Care & Rehab
-                                                    </a>
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care"
-                                                            src="assets/images/nav-img/parkinson-1.png" width="56"
-                                                            height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Parkinson Care & Rehab
-                                                    </a>
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/coma-1.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Coma Care &Rehab
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-lg-4 mb-4 mb-md-0 drop-respo"
-                                                style="display: grid; justify-content: center;">
-                                                <div class="dropdown-content">
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/post.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Post Operative (General Surgery) Care & Rehab
-                                                    </a>
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/ortho.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Post Operative (Orthopedic Surgery) Care & Rehab
-                                                    </a>
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/cancer-1.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Cancer Care & Rehab
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-lg-4 mb-4 mb-md-0 drop-respo"
-                                                style="display: grid; justify-content: center;">
-                                                <div class="dropdown-content">
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/cardio.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Cardiac Care & Rehab
-                                                    </a>
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/mental-1.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Mental Health Care & Rehab
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                <li class="nav-item dropdown position-static">
+                  <a
+                    data-mdb-dropdown-init
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Geriatric Care
+                  </a>
+                  <!-- Dropdown menu -->
+                  <div
+                    class="dropdown-menu w-100 mt-0"
+                    aria-labelledby="navbarDropdown"
+                    style="
+                      border-top-left-radius: 0;
+                      border-top-right-radius: 0;
+                    "
+                  >
+                    <div class="container">
+                      <div class="row my-4 justify-content-center">
+                        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0 drop-respo">
+                          <div class="dropdown-content">
+                            <a href="assisted-medical.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/assisted-1.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Assisted Medical Care
+                            </a>
+                            <a href="alzheimer-care.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/demencia-1.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Alzheimer’s & Dementia Care
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          class="col-md-6 col-lg-4 mb-4 mb-md-0 drop-respo"
+                          style="display: grid; justify-content: center"
+                        >
+                          <div class="dropdown-content">
+                            <a href="locomotor.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/loco.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Locomotor Disability Care
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          class="col-md-6 col-lg-4 mb-4 mb-md-0 drop-respo"
+                          style="display: grid; justify-content: center"
+                        >
+                          <div class="dropdown-content">
+                            <a href="intellectual-care.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/intell.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Intellectual Disability Care
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
 
-                            <li class="nav-item dropdown position-static">
-                                <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                    role="button" aria-expanded="false">
-                                    Geriatric Care
-                                </a>
-                                <!-- Dropdown menu -->
-                                <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="
-                                                border-top-left-radius: 0;
-                                                border-top-right-radius: 0;
-                                              ">
-                                    <div class="container">
-                                        <div class="row my-4 justify-content-center">
-                                            <div class="col-md-6 col-lg-4 mb-4 mb-md-0 drop-respo"
-                                                style="display: grid; justify-content: center;">
-                                                <div class="dropdown-content">
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/assisted-1.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Assisted Medical Care
-                                                    </a>
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/demencia-1.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Alzheimer’s & Dementia Care
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-lg-4 mb-4 mb-md-0 drop-respo"
-                                                style="display: grid; justify-content: center;">
-                                                <div class="dropdown-content">
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/loco.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Locomotor Disability Care
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-lg-4 mb-4 mb-md-0 drop-respo"
-                                                style="display: grid; justify-content: center;">
-                                                <div class="dropdown-content">
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/intell.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Intellectual Disability Care
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                <li class="nav-item dropdown position-static">
+                  <a
+                    data-mdb-dropdown-init
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Therapies
+                  </a>
+                  <!-- Dropdown menu -->
+                  <div
+                    class="dropdown-menu w-100 mt-0"
+                    aria-labelledby="navbarDropdown"
+                    style="
+                      border-top-left-radius: 0;
+                      border-top-right-radius: 0;
+                    "
+                  >
+                    <div class="container">
+                      <div class="row my-4 justify-content-center">
+                        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0 drop-respo">
+                          <div class="dropdown-content">
+                            <a
+                              href="general-physiotherapy.html"
+                              class="img-text"
+                            >
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/general-1.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              General Physiotherapy
+                            </a>
+                            <a
+                              href="special-physiotherapy.html"
+                              class="img-text"
+                            >
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/special-1.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Special Physiotherapy
+                            </a>
+                            <a href="massage.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/message-1.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Ayurvedic Abhayang (Massage) Therapy
+                            </a>
+                            <!-- <a href="speech.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/speech-1.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Speech Therapy
+                            </a> -->
+                          </div>
+                        </div>
+                        <div
+                          class="col-md-6 col-lg-4 mb-4 mb-md-0 drop-respo"
+                          style="display: grid; justify-content: center"
+                        >
+                          <div class="dropdown-content">
+                            <a href="counselling.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/behav.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Counselling & Behaviour Therapy
+                            </a>
+                            <!-- <a href="hydrocolon.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/hydro-1.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Hydro-Colon Therapy
+                            </a> -->
+                            <a href="fms.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/fms-1.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Incontinence Therapy/FMS
+                            </a>
+                            <a href="speech.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/speech-1.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Speech Therapy
+                            </a>
+                            <!-- <a
+                              href="erectile-dysfunction-rehab.html"
+                              class="img-text"
+                            >
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/edrp.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Erectile Dysfunction Rehab
+                            </a> -->
+                          </div>
+                        </div>
+                        <div
+                          class="col-md-6 col-lg-4 mb-4 mb-md-0 drop-respo"
+                          style="display: grid; justify-content: center"
+                        >
+                          <div class="dropdown-content">
+                            <a href="dysphagia.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/dysp.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Dysphagia Therapy
+                            </a>
+                            <a href="exercise.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/exersice-1.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Exercise Therapy
+                            </a>
+                            <!-- <a href="occupational.html" class="img-text">
+                              <img
+                                alt="Spine Care"
+                                src="assets/images/nav-img/occuap.png"
+                                width="56"
+                                height="56"
+                                decoding="async"
+                                data-nimg="future"
+                                loading="lazy"
+                                style="color: transparent"
+                              />
+                              Occupational Therapy
+                            </a> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
 
-                            <li class="nav-item dropdown position-static">
-                                <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                    role="button" aria-expanded="false">
-                                    Therapies
-                                </a>
-                                <!-- Dropdown menu -->
-                                <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="
-                                                border-top-left-radius: 0;
-                                                border-top-right-radius: 0;
-                                              ">
-                                    <div class="container">
-                                        <div class="row my-4 justify-content-center">
-                                            <div class="col-md-6 col-lg-4 mb-4 mb-md-0 drop-respo"
-                                                style="display: grid; justify-content: center;">
-                                                <div class="dropdown-content">
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/general-1.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        General Physiotherapy
-                                                    </a>
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/special-1.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Special Physiotherapy
-                                                    </a>
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/message-1.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Ayurvedic Abhayang (Massage) Therapy
-                                                    </a>
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/speech-1.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Speech Therapy
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-lg-4 mb-4 mb-md-0 drop-respo"
-                                                style="display: grid; justify-content: center;">
-                                                <div class="dropdown-content">
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/behav.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Counselling & Behaviour Therapy
-                                                    </a>
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/hydro-1.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Hydro-Colon Therapy
-                                                    </a>
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/fms-1.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Incontinence Therapy/FMS
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-lg-4 mb-4 mb-md-0 drop-respo"
-                                                style="display: grid; justify-content: center;">
-                                                <div class="dropdown-content">
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/dysp.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Dysphagia Therapy
-                                                    </a>
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/exersice-1.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Exercise Therapy
-                                                    </a>
-                                                    <a href="coming-soon.html" class="img-text">
-                                                        <img alt="Spine Care" src="assets/images/nav-img/occuap.png"
-                                                            width="56" height="56" decoding="async" data-nimg="future"
-                                                            loading="lazy" style="color: transparent;">
-                                                        Occupational Therapy
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                <!-- <li>
+                  <a href="medical-gym.html">Medical Gym</a>
+                </li> -->
 
-                            <li>
-                                <a href="medical-gym.html">Medical Gym</a>
-                            </li>
-
-                            <li>
-                                <a href="pricing.html">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="blog.html">Blogs</a>
-                            </li>
-
-
-                        </ul>
-                    </nav><!-- /.main-header__nav -->
-                    <div class="main-header__right">
-                        <button type="button" class="main-header-two__sidebar-btn sidebar-btn__toggler">
-                            <span class="main-header-two__sidebar-btn__line"></span>
-                            <span class="main-header-two__sidebar-btn__line"></span>
-                            <span class="main-header-two__sidebar-btn__line"></span>
-                        </button><!-- /.main-header-two__sidebar-btn -->
-                        <div class="mobile-nav__btn mobile-nav__toggler">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div><!-- /.mobile-nav__toggler -->
-                        <a href="#contact" class="cleenhearts-btn cleenhearts-btn--border-base main-header__btn">
-                            <div class="cleenhearts-btn__icon-box">
-                                <div class="cleenhearts-btn__icon-box__inner"><span class="icon-donate"></span></div>
-                            </div>
-                            <span class="cleenhearts-btn__text">Contact Us</span>
-                        </a><!-- /.thm-btn main-header__btn -->
-                    </div><!-- /.main-header__right -->
-                </div><!-- /.main-header__inner -->
-            </div><!-- /.container-fluid -->
-        </header><!-- /.main-header-two main-header -->
-
+                <!-- <li>
+                  <a data-bs-toggle="modal" data-bs-target="#deck">Pricing</a>
+                </li> -->
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="blog.html">Blogs</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.main-header__nav -->
+            <div class="main-header__right">
+              <button
+                type="button"
+                class="main-header-two__sidebar-btn sidebar-btn__toggler"
+              >
+                <span class="main-header-two__sidebar-btn__line"></span>
+                <span class="main-header-two__sidebar-btn__line"></span>
+                <span class="main-header-two__sidebar-btn__line"></span></button
+              ><!-- /.main-header-two__sidebar-btn -->
+              <div class="mobile-nav__btn mobile-nav__toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <!-- /.mobile-nav__toggler -->
+              <a
+                href="vtour.html"
+                target="_blank"
+                class="cleenhearts-btn cleenhearts-btn--border-base main-header__btn"
+              >
+                <div class="cleenhearts-btn__icon-box">
+                  <div class="cleenhearts-btn__icon-box__inner">
+                    <span class="icon-donate"></span>
+                  </div>
+                </div>
+                <span class="cleenhearts-btn__text">Virtual Tour</span> </a
+              ><!-- /.thm-btn main-header__btn -->
+            </div>
+            <!-- /.main-header__right -->
+          </div>
+          <!-- /.main-header__inner -->
+        </div>
+        <!-- /.container-fluid -->
+      </header>
 
         <section class="error-404 section-space">
             <div class="container">
