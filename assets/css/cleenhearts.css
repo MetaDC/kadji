@@ -10323,7 +10323,16 @@ li:hover .sidebar__comments__icon::after {
   border-radius: 20px 20px 0 0;
   overflow: hidden;
 }
-
+/* @media (min-width: 950px) and (max-width: 1200px) {
+  .product-item {
+    position: relative;
+    margin: 20px;
+    background-color: var(--cleenhearts-white, #fff);
+    border: 1px solid var(--cleenhearts-border-color, #0ca1ba);
+    border-radius: 20px;
+    transition: all 500ms ease;
+  }
+} */
 .product-item__img img {
   display: block;
   width: 100%;
