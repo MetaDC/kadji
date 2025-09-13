@@ -8792,8 +8792,9 @@ body.megamenu-popup-active .mobile-nav__content {
 .gallery-one__filter__list li span {
   display: block;
   font-size: 16px;
-  background-color: var(--cleenhearts-base, #124c5a);
-  color: var(--cleenhearts-white, #fff);
+  background-color: var(--cleenhearts-white, #fff);
+  color: var(--cleenhearts-base, #124c5a);
+  border: 2px solid var(--cleenhearts-base, #124c5a);
   transition: all 500ms ease;
   text-transform: capitalize;
   font-weight: 500;
@@ -8803,8 +8804,9 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .gallery-one__filter__list li.active span,
 .gallery-one__filter__list li:hover span {
-  background-color: var(--cleenhearts-secondary, #f6d469);
-  color: var(--cleenhearts-base, #124c5a);
+  background-color: var(--cleenhearts-base, #124c5a);
+  color: var(--cleenhearts-white, #fff);
+  border: 2px solid var(--cleenhearts-base, #124c5a);
 }
 
 .gallery-one__card {
