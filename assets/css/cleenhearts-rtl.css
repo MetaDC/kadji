@@ -7628,9 +7628,9 @@ body.megamenu-popup-active .mobile-nav__content {
   margin-bottom: 50px;
   flex-wrap: wrap;
 }
-.gallery-one__filter__list li + li span {
+/* .gallery-one__filter__list li + li span {
   border-right: 1px solid var(--cleenhearts-secondary, #f6d469);
-}
+} */
 .gallery-one__filter__list li {
   cursor: pointer;
 }
