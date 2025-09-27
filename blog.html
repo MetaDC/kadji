@@ -1397,7 +1397,6 @@
     <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 
     <script>
-      // Your web app's Firebase configuration
       const firebaseConfig = {
         apiKey: "AIzaSyD_L_13116jHU8BarcsLL-u1bj-XJLjqaM",
         authDomain: "kadji-blogs.firebaseapp.com",
@@ -1407,109 +1406,145 @@
         appId: "1:163750255841:web:03a3a0a65d4987e248aba0",
       };
 
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
+      if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
+      }
 
-      // Initialize Firestore
       const db = firebase.firestore();
 
-      // Reference to Firestore collection
-      var ref = db.collection("Blogs").where("isVisible", "==", true);
+      function getMillisFromDoc(docOrData) {
+        const data =
+          typeof docOrData.data === "function" ? docOrData.data() : docOrData;
+        const createdAt = data && data.createdAt;
+        if (!createdAt) return 0;
+
+        if (createdAt && typeof createdAt.toMillis === "function") {
+          return createdAt.toMillis();
+        }
+
+        if (createdAt && typeof createdAt.seconds === "number") {
+          const seconds = createdAt.seconds || 0;
+          const nanos = createdAt.nanoseconds || 0;
+          return seconds * 1000 + Math.floor(nanos / 1e6);
+        }
+
+        if (typeof createdAt === "number") {
+          return createdAt < 1e12 ? createdAt * 1000 : createdAt;
+        }
+
+        if (typeof createdAt === "string") {
+          const parsed = Date.parse(createdAt);
+          if (!isNaN(parsed)) return parsed;
+
+          const num = Number(createdAt);
+          if (!isNaN(num)) return num < 1e12 ? num * 1000 : num;
+        }
+
+        return 0;
+      }
+
       var list = document.getElementById("blogs-list");
       var allBlogs = [];
 
-      // Fetch all blogs on page load
+      var ref = db.collection("Blogs").where("isVisible", "==", true);
+
       ref
         .get()
         .then((docsSnap) => {
           console.log("Documents fetched:", docsSnap.docs.length);
           if (docsSnap.docs.length > 0) {
-            allBlogs = docsSnap.docs;
-            getData(allBlogs); // Render the fetched blogs
+            allBlogs = docsSnap.docs.slice();
+
+            allBlogs.sort((a, b) => getMillisFromDoc(b) - getMillisFromDoc(a));
+
+            getData(allBlogs);
           } else {
             console.error("No blogs found.");
-            list.innerHTML = "<p>No blogs available.</p>";
+            if (list) list.innerHTML = "<p>No blogs available.</p>";
           }
         })
         .catch((error) => {
           console.error("Error fetching documents:", error);
-          list.innerHTML =
-            "<p>Error fetching blogs. Please try again later.</p>";
+          if (list)
+            list.innerHTML =
+              "<p>Error fetching blogs. Please try again later.</p>";
         });
 
-      // Function to render blogs
       function getData(blogs) {
-        list.innerHTML = ""; // Clear the previous blog list
+        if (!list) return;
+        list.innerHTML = "";
 
-        if (blogs.length > 0) {
-          blogs.forEach((doc) => {
-            const data = doc.data();
-            const date = new Date(data.createdAt)
-              .toDateString()
-              .split(" ")
-              .slice(1)
-              .join(" ");
-
-            list.innerHTML += `
-                    <div class="col-md-6 col-lg-4 blog-style">
-                        <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-                            <a href="blog-details.html?title=${data.permalink}" class="blog-card__image">
-                                <img src="${data.thumbnail}" alt="Blog" class="img-height">
-                            </a>
-                            <div class="blog-card__content" style="background-image: url('assets/images/blog/blog-bg-1-1.png');">
-                                <h3 class="blog-card__title "><a href="blog-details.html?title=${data.permalink}">${data.metaTitle}</a></h3>
-                                <div class= "blog-card-bottom">
-                                <a href="blog-details.html?title=${data.permalink}" class="blog-card__link">
-                                    <span class="blog-card__link__back"><span class="icon-duble-arrow"></span>Read More</span>
-                                </a>
-                                <span class="blog-block__meta" id="blog-date">${date}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-          });
-        } else {
+        if (!blogs || blogs.length === 0) {
           list.innerHTML = "<p>No blogs match your search.</p>";
+          return;
         }
+
+        blogs.forEach((docOrData) => {
+          const data =
+            typeof docOrData.data === "function" ? docOrData.data() : docOrData;
+          const ms = getMillisFromDoc(docOrData);
+          const date = ms
+            ? new Date(ms).toDateString().split(" ").slice(1).join(" ")
+            : "";
+
+          list.innerHTML += `
+        <div class="col-md-6 col-lg-4 blog-style">
+          <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+            <a href="blog-details.html?title=${data.permalink}" class="blog-card__image">
+              <img src="${data.thumbnail}" alt="Blog" class="img-height">
+            </a>
+            <div class="blog-card__content" style="background-image: url('assets/images/blog/blog-bg-1-1.png');">
+              <h3 class="blog-card__title">
+                <a href="blog-details.html?title=${data.permalink}">${data.metaTitle}</a>
+              </h3>
+              <div class="blog-card-bottom">
+                <a href="blog-details.html?title=${data.permalink}" class="blog-card__link">
+                  <span class="blog-card__link__back"><span class="icon-duble-arrow"></span>Read More</span>
+                </a>
+                <span class="blog-block__meta">${date}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+        });
       }
 
-      // Event listener for search input field
-      document
-        .getElementById("searchInput")
-        .addEventListener("input", function (event) {
-          var keyword = event.target.value.trim().toLowerCase(); // Get the entered search keyword
+      const searchInput = document.getElementById("searchInput");
+      if (searchInput) {
+        searchInput.addEventListener("input", function (event) {
+          var keyword = event.target.value.trim().toLowerCase();
 
           if (keyword) {
             console.log("Search keyword:", keyword);
 
-            // Filter blogs based on the keyword
             var filteredBlogs = allBlogs.filter((doc) => {
               const data = doc.data();
-              const metaTitle = data.metaTitle
-                ? data.metaTitle.toLowerCase()
-                : "";
-              const lowerTitle = data.lowerTitle
-                ? data.lowerTitle.toLowerCase()
-                : "";
-
+              const metaTitle = (data.metaTitle || "").toLowerCase();
+              const lowerTitle = (data.lowerTitle || "").toLowerCase();
               return (
                 metaTitle.includes(keyword) || lowerTitle.includes(keyword)
               );
             });
 
+            filteredBlogs.sort(
+              (a, b) => getMillisFromDoc(b) - getMillisFromDoc(a)
+            );
+
             console.log("Filtered blogs:", filteredBlogs.length);
-            getData(filteredBlogs); // Render the filtered blogs
+            getData(filteredBlogs);
           } else {
             console.log("No keyword entered, displaying all blogs.");
-            getData(allBlogs); // If no keyword, render all blogs
+
+            getData(allBlogs);
           }
         });
+      }
 
-      // Show all blogs initially
-      document.addEventListener("DOMContentLoaded", function () {
-        getData(allBlogs);
-      });
+      // If you call getData on DOMContentLoaded, no-op because allBlogs will be empty until ref.get() completes.
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   getData(allBlogs);
+      // });
     </script>
   </body>
 </html>

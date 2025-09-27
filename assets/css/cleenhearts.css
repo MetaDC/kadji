@@ -3627,6 +3627,7 @@ a.img-text {
   display: block;
   width: 100%;
   border-radius: 20px;
+  object-fit: cover;
 }
 
 .blog-card:hover .blog-card__image::before,
@@ -22288,9 +22289,9 @@ div#HCB_comment_box {
   height: 40px;
 }
 
-.img-height {
+/* .img-height {
   height: 240px;
-}
+} */
 
 .blog-card-bottom {
   display: flex;
