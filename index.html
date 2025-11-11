@@ -274,8 +274,9 @@
         }
       }
 
-      .swiper-pagination {
+      .yt-swiper-pagination {
         margin-top: 15px;
+        text-align: center;
       }
 
       .insta-feed {
@@ -382,6 +383,153 @@
         height: 0 !important;
         margin: 0 !important;
         padding: 0 !important;
+      }
+
+      /* YouTube Video Carousel */
+      .instagram-carousel {
+        position: relative;
+        padding: 0 60px;
+      }
+
+      .swiper {
+        width: 100%;
+        padding: 20px 0;
+      }
+
+      .video-item {
+        width: 100%;
+        max-width: 100%;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .video-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .video-wrapper {
+        position: relative;
+        width: 100%;
+        padding-top: 56.3%;
+        overflow: hidden;
+        background: #000;
+      }
+
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 50%;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      .swiper-button-next:hover,
+      .swiper-button-prev:hover {
+        background: #fff;
+        transform: scale(1.1);
+      }
+
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .swiper-button-next {
+        right: 10px;
+        top: 44% !important;
+        left: auto;
+      }
+
+      .swiper-button-prev {
+        left: 10px;
+        top: 44% !important;
+        right: auto;
+      }
+
+      .yt-swiper-pagination {
+        bottom: -5px !important;
+      }
+
+      .yt-swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: #ccc;
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
+
+      .yt-swiper-pagination-bullet-active {
+        background: #333;
+        width: 30px;
+        border-radius: 6px;
+      }
+
+      .sec-title__title {
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: #333;
+      }
+
+      @media (max-width: 1024px) {
+        .instagram-carousel {
+          padding: 0 50px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .sec-title__title {
+          font-size: 28px;
+          margin-bottom: 30px;
+        }
+
+        .instagram-carousel {
+          padding: 0 40px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          width: 40px;
+          height: 40px;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .instagram-carousel {
+          padding: 0 30px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          width: 35px;
+          height: 35px;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+          font-size: 14px;
+        }
       }
     </style>
   </head>
@@ -2324,6 +2472,99 @@
         <!-- /.container-fluid -->
       </section>
       <!-- /.events-gallery -->
+      <section
+        class="product-page section-space-bottom py-5"
+        style="padding-top: 0px !important"
+      >
+        <div class="text-center mb-4">
+          <h6 class="sec-title__tagline sec-title__tagline--center">
+            Inside Kadji
+          </h6>
+          <h3 class="sec-title__title">YouTube Videos</h3>
+        </div>
+
+        <div class="container">
+          <div class="instagram-carousel">
+            <div class="swiper instagramSwiper">
+              <div class="swiper-wrapper">
+                <!-- Video 1 -->
+                <div class="swiper-slide">
+                  <div class="video-item">
+                    <div class="video-wrapper">
+                      <iframe
+                        data-video-id="sWF7Uz5fgH8"
+                        title="YouTube video 1"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="swiper-slide">
+                  <div class="video-item">
+                    <div class="video-wrapper">
+                      <iframe
+                        data-video-id="F_U38Y_djbw"
+                        title="YouTube video 2"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="swiper-slide">
+                  <div class="video-item">
+                    <div class="video-wrapper">
+                      <iframe
+                        data-video-id="o7MEYV1fjLo"
+                        title="YouTube video 3"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="swiper-slide">
+                  <div class="video-item">
+                    <div class="video-wrapper">
+                      <iframe
+                        data-video-id="pfFnkzKgKSc"
+                        title="YouTube video 4"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Video 5 -->
+                <div class="swiper-slide">
+                  <div class="video-item">
+                    <div class="video-wrapper">
+                      <iframe
+                        data-video-id="i9DTOWHMaDs"
+                        title="YouTube video 5"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="yt-swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--Viedo Section-->
       <section
@@ -4080,6 +4321,19 @@
         <!-- /.subscribe__shape -->
       </section>
       <!-- /.subscribe -->
+      <div class="map-section" style="height: 570px">
+        <div class="map_iframe">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.292822381312!2d73.16402647529159!3d22.2668949797106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc88a5555544d%3A0x582048b4239bf360!2sKadji%20Care%20-%20Rehabilitation%20Center%20in%20Vadodara%20%7C%20Dementia%20Care%20%7C%20Cancer%20Care%20centre%20%7C%20Senior%20citizen%20home%20in%20Vadodara!5e0!3m2!1sen!2sin!4v1762770538780!5m2!1sen!2sin"
+            width="100%"
+            height="570"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
 
       <footer class="footer-two main-footer" id="contact">
         <div class="main-footer__top">
@@ -4822,6 +5076,7 @@
         });
       });
     </script>
+
     <script type="text/javascript">
       var EhAPI = EhAPI || {};
       EhAPI.after_load = function () {
@@ -4842,6 +5097,7 @@
           new Date().getHours()
       );
     </script>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         function addValue() {
@@ -4945,6 +5201,7 @@
         },
       });
     </script>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         new Swiper(".amenities-swiper", {
@@ -4970,6 +5227,7 @@
         });
       });
     </script>
+
     <script>
       window.addEventListener("load", () => {
         const header = document.querySelector(".instagram-media header");
@@ -4978,5 +5236,124 @@
         }
       });
     </script>
+    <script>
+      // === Set iframe sources dynamically with correct origin ===
+      const currentOrigin = window.location.origin;
+      document
+        .querySelectorAll(".instagramSwiper iframe[data-video-id]")
+        .forEach((iframe) => {
+          const videoId = iframe.getAttribute("data-video-id");
+          iframe.src = `https://www.youtube.com/embed/${videoId}?enablejsapi=1&origin=${currentOrigin}`;
+        });
+
+      // === Initialize Swiper (no autoplay) ===
+      const instagramSwiper = new Swiper(".instagramSwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".yt-swiper-pagination",
+          clickable: true,
+        },
+        autoplay: false, // 🚫 No auto slide
+        breakpoints: {
+          320: { slidesPerView: 1, spaceBetween: 15 },
+          768: { slidesPerView: 2, spaceBetween: 20 },
+          1024: { slidesPerView: 3, spaceBetween: 30 },
+        },
+      });
+
+      // === Track currently playing video ===
+      let currentPlayingIframe = null;
+
+      // === Pause all videos ===
+      function pauseAllVideos() {
+        document
+          .querySelectorAll(".instagramSwiper iframe")
+          .forEach((iframe) => {
+            iframe.contentWindow.postMessage(
+              '{"event":"command","func":"pauseVideo","args":""}',
+              "*"
+            );
+          });
+      }
+
+      // === Listen for YouTube Player messages ===
+      window.addEventListener("message", (event) => {
+        if (
+          event.origin !== "https://www.youtube.com" &&
+          event.origin !== "https://www.youtube-nocookie.com"
+        ) {
+          return;
+        }
+
+        try {
+          const data = JSON.parse(event.data);
+
+          // When video starts playing
+          if (data.event === "onStateChange" && data.info === 1) {
+            document
+              .querySelectorAll(".instagramSwiper iframe")
+              .forEach((iframe) => {
+                if (iframe.contentWindow === event.source) {
+                  if (currentPlayingIframe && currentPlayingIframe !== iframe) {
+                    // 🔥 Pause previous video
+                    currentPlayingIframe.contentWindow.postMessage(
+                      '{"event":"command","func":"pauseVideo","args":""}',
+                      "*"
+                    );
+                  }
+                  currentPlayingIframe = iframe;
+                }
+              });
+          }
+
+          // When video ends or pauses
+          if (
+            data.event === "onStateChange" &&
+            (data.info === 2 || data.info === 0)
+          ) {
+            if (
+              currentPlayingIframe &&
+              currentPlayingIframe.contentWindow === event.source
+            ) {
+              currentPlayingIframe = null;
+            }
+          }
+        } catch (e) {
+          // ignore
+        }
+      });
+
+      // === Pause all videos when changing slides ===
+      instagramSwiper.on("slideChange", () => {
+        pauseAllVideos();
+        currentPlayingIframe = null;
+      });
+
+      // === Also pause when clicking navigation or pagination ===
+      document
+        .querySelectorAll(".swiper-button-next, .swiper-button-prev")
+        .forEach((btn) => {
+          btn.addEventListener("click", () => {
+            pauseAllVideos();
+            currentPlayingIframe = null;
+          });
+        });
+
+      document.addEventListener("click", (e) => {
+        if (e.target.classList.contains("yt-swiper-pagination-bullet")) {
+          pauseAllVideos();
+          currentPlayingIframe = null;
+        }
+      });
+    </script>
+
+    <!-- Load YouTube API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
   </body>
 </html>
