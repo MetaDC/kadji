@@ -269,6 +269,11 @@
 .pr-30 {
   padding-right: 30px;
 }
+@media (max-width: 1200px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
 
 /*--------------------------------------------------------------
 # Common
