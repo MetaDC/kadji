@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google Tag Manager -->
@@ -938,7 +938,7 @@
       <section
         class="inspiring-one hero"
         style="
-          background-image: url('assets/images/medical-rehab/stroke-care-and-rehab.jpg');
+          background-image: url(&quot;assets/images/medical-rehab/stroke-care-and-rehab.jpg&quot;);
         "
       >
         <div class="container">
@@ -1124,7 +1124,7 @@
               >
                 <form
                   class="form form-style-form1 default"
-                  onsubmit="return window.submit_form_inquiry(event,this)"
+                  onsubmit="return window.submit_form_inquiry(event, this);"
                   style="
                         border-radius: 20px;border: 0px solid #ddd;
               background-color:#124c5a;max-width:100%;background-position:0% 0%
@@ -1278,7 +1278,7 @@
       <section
         class="help-people"
         style="
-          background-image: url('assets/images/backgrounds/help-people-bg-1.png');
+          background-image: url(&quot;assets/images/backgrounds/help-people-bg-1.png&quot;);
         "
       >
         <div class="about-one__bg z-0">
@@ -1287,7 +1287,7 @@
           <div
             class="about-one__bg__inner"
             style="
-              background-image: url('assets/images/shapes/about-shape-1-1.png');
+              background-image: url(&quot;assets/images/shapes/about-shape-1-1.png&quot;);
             "
           ></div>
           <!-- /.about-one__left__bg__inner -->
@@ -2006,7 +2006,7 @@
                 <div
                   class="testimonials-card__bg"
                   style="
-                    background-image: url('assets/images/backgrounds/testimonial-bg-2.png');
+                    background-image: url(&quot;assets/images/backgrounds/testimonial-bg-2.png&quot;);
                   "
                 ></div>
                 <!-- /.testimonials-card__bg -->
@@ -2018,7 +2018,14 @@
                     src="https://www.youtube.com/embed/broZnRNMCXM?si=KPmE_rHwcQ7DebBr"
                     title="YouTube video player"
                     frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allow="
+                      accelerometer;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                      web-share;
+                    "
                     allowfullscreen
                   ></iframe>
                   <div class="testimonials-card__info">
@@ -2046,7 +2053,7 @@
                 <div
                   class="testimonials-card__bg"
                   style="
-                    background-image: url('assets/images/backgrounds/testimonial-bg-2.png');
+                    background-image: url(&quot;assets/images/backgrounds/testimonial-bg-2.png&quot;);
                   "
                 ></div>
                 <!-- /.testimonials-card__bg -->
@@ -2058,7 +2065,13 @@
                     src="https://www.youtube.com/embed/kEVNISg19Co?si=7x6dz8PW_CnADb9L"
                     title="YouTube video player"
                     frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                    allow="
+                      accelerometer;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                    "
                     allowfullscreen
                   ></iframe>
                   <div class="testimonials-card__info">
@@ -2084,7 +2097,7 @@
                 <div
                   class="testimonials-card__bg"
                   style="
-                    background-image: url('assets/images/backgrounds/testimonial-bg-2.png');
+                    background-image: url(&quot;assets/images/backgrounds/testimonial-bg-2.png&quot;);
                   "
                 ></div>
                 <!-- /.testimonials-card__bg -->
@@ -2096,7 +2109,13 @@
                     src="https://www.youtube.com/embed/f4GCIfVQQPM?si=1pKrEj7UYoYhaLuQ"
                     title="YouTube video player"
                     frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                    allow="
+                      accelerometer;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                    "
                     allowfullscreen
                   ></iframe>
                   <div class="testimonials-card__info">
@@ -2629,14 +2648,14 @@
         document,
         "script",
         "//d2p078bqz5urf7.cloudfront.net/jsapi/ehform.js?v" +
-          new Date().getHours()
+          new Date().getHours(),
       );
     </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         function addValue() {
           var location = document.getElementById(
-            "eb_temp_field_hidden_field_1"
+            "eb_temp_field_hidden_field_1",
           );
           location.value = "Stroke Care & Rehab";
           // console.log("Matin");
